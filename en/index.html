@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mark Elias — Track Record</title>
+<meta name="description" content="Public, verifiable track record of Mark Elias, the Smart Money AI analyst. Every alert timestamped, 7/30/60-day performance, alpha vs S&P 500.">
+<style>
+  :root{
+    --bg:#070b16; --bg2:#0a1020; --panel:#0e1526; --line:#1c2742;
+    --fg:#f2f5fa; --muted:#7e8aa3;
+    --magenta:#d13bf5; --cyan:#26c6ff; --lime:#9dff3c; --gold:#ffc63f;
+    --grad:linear-gradient(90deg,#8a2bff 0%,#d13bf5 25%,#26c6ff 60%,#9dff3c 100%);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,#101a33 0%,var(--bg) 55%);color:var(--fg);
+       font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+  main{max-width:960px;margin:0 auto;padding:48px 18px 64px}
+
+  /* ── Header charte ───────────────────────────── */
+  .hero{display:flex;align-items:center;gap:26px;flex-wrap:wrap;margin-bottom:10px}
+  .mono{flex:0 0 auto;width:96px;height:96px;border-radius:50%;position:relative;display:grid;place-items:center;
+        background:var(--bg2);font-weight:800;font-size:1.9rem;letter-spacing:.02em}
+  .mono::before{content:"";position:absolute;inset:-4px;border-radius:50%;background:conic-gradient(from 210deg,#8a2bff,#d13bf5,#26c6ff,#9dff3c,#8a2bff);
+        -webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 5px),#000 calc(100% - 4px));
+        mask:radial-gradient(farthest-side,transparent calc(100% - 5px),#000 calc(100% - 4px))}
+  .hero-txt h1{font-size:clamp(2.2rem,6vw,3.4rem);font-weight:800;margin:0;letter-spacing:-.03em;line-height:1.05}
+  .hero-rule{height:3px;width:min(420px,80%);background:var(--grad);border-radius:2px;margin:10px 0 12px}
+  .tagline{margin:0;font-size:1.05rem}
+  .tagline .t1{color:var(--fg);opacity:.85}
+  .tagline .t2{color:var(--cyan);font-weight:700}
+
+  .pills{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 6px}
+  .pill{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:8px 18px;border-radius:999px;background:transparent}
+  .pill.m{color:var(--magenta);border:1.5px solid var(--magenta)}
+  .pill.c{color:var(--cyan);border:1.5px solid var(--cyan)}
+  .pill.l{color:var(--lime);border:1.5px solid var(--lime)}
+
+  /* ── Tuiles stats (style bannière) ───────────── */
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:22px 0 8px}
+  .tile{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-align:center}
+  .tile small{display:block;color:var(--muted);font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:4px}
+  .tile b{font-size:1.02rem}
+  .tile .m{color:var(--magenta)} .tile .c{color:var(--cyan)} .tile .l{color:var(--lime)} .tile .g{color:var(--gold)}
+
+  h2{font-size:1.1rem;margin:40px 0 12px;letter-spacing:.01em;display:flex;align-items:center;gap:10px}
+  h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:14px 0}
+  table{width:100%;border-collapse:collapse;font-size:.9rem}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+  th{color:var(--muted);font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.12em}
+  .empty{color:var(--muted);text-align:center;padding:26px 10px;font-size:.92rem}
+
+  .layers{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px;margin-top:6px}
+  .layer{background:var(--panel);border:1px solid var(--line);border-top:2px solid transparent;border-radius:12px;padding:13px 15px}
+  .layer:nth-child(1){border-top-color:var(--magenta)} .layer:nth-child(2){border-top-color:var(--cyan)}
+  .layer:nth-child(3){border-top-color:var(--lime)} .layer:nth-child(4){border-top-color:var(--gold)}
+  .layer:nth-child(5){border-top-color:#8a2bff}
+  .layer b{display:block;font-size:.86rem;margin-bottom:3px}
+  .layer span{color:var(--muted);font-size:.77rem}
+
+  .rules{margin:0;padding-left:18px;color:var(--muted);font-size:.92rem}
+  .rules li{margin:6px 0}
+  .rules li::marker{color:var(--cyan)}
+
+  /* ── CTA dégradé (style bannière) ────────────── */
+  .cta{display:flex;gap:14px;flex-wrap:wrap;margin:30px 0 8px}
+  .btn{position:relative;display:inline-block;padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:700;
+       font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--fg);background:var(--bg2)}
+  .btn::before{content:"";position:absolute;inset:0;border-radius:999px;padding:1.6px;background:var(--grad);
+       -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+  .btn.primary{background:linear-gradient(90deg,rgba(138,43,255,.18),rgba(38,198,255,.18),rgba(157,255,60,.18))}
+  .launch{color:var(--gold);font-size:.82rem;margin-top:6px}
+
+  .note{border-left:3px solid; border-image:var(--grad) 1; padding:10px 14px;color:var(--muted);font-size:.78rem;margin-top:40px;background:var(--panel)}
+  footer{color:var(--muted);font-size:.74rem;margin-top:26px;text-align:center}
+</style>
+</head>
+<body>
+<main style="position:relative">
+  <a href="/?lang=fr" onclick="try{localStorage.setItem('me_lang','fr')}catch(e){}" style="position:absolute;top:18px;right:18px;color:#7e8aa3;font-size:.78rem;text-decoration:none;border:1px solid #1c2742;border-radius:999px;padding:5px 14px">FR</a>
+  <div class="hero">
+    <div class="mono">ME</div>
+    <div class="hero-txt">
+      <h1>Mark Elias</h1>
+      <div class="hero-rule"></div>
+      <p class="tagline"><span class="t1">The data is there.</span><br><span class="t2">The insight is rare.</span></p>
+    </div>
+  </div>
+
+  <div class="pills">
+    <span class="pill m">Finance</span>
+    <span class="pill c">Trading</span>
+    <span class="pill l">AI</span>
+  </div>
+
+  <div class="tiles">
+    <div class="tile"><small>Membership</small><b class="m">€19.99/mo*</b></div>
+    <div class="tile"><small>Markets</small><b class="c">Global Markets</b></div>
+    <div class="tile"><small>Horizon</small><b class="l">&lt; 60 days</b></div>
+    <div class="tile"><small>Goal</small><b class="g">Outperform the markets</b></div>
+  </div>
+
+  <h2>Overall performance</h2>
+  <div class="panel">
+    <table>
+      <thead><tr><th>Horizon</th><th>Alerts</th><th>Hit rate</th><th>Median return</th><th>Avg alpha vs SPY</th></tr></thead>
+      <tbody>
+        <tr><td colspan="5" class="empty">Launched October 2026. The first alerts are being built — every alert will appear here with its exact publication date and measured performance. Nothing is retroactive, nothing is deleted.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Alert history</h2>
+  <div class="panel">
+    <table>
+      <thead><tr><th>Date</th><th>Ticker</th><th>Score</th><th>Entry</th><th>Return</th><th>Alpha</th></tr></thead>
+      <tbody>
+        <tr><td colspan="6" class="empty">Published alerts will appear here, updated daily and automatically.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>The method — 5 signal layers</h2>
+  <div class="layers">
+    <div class="layer"><b>Institutional entries</b><span>SEC 13F/13D, AMF threshold crossings — hedge funds &amp; activists</span></div>
+    <div class="layer"><b>Short interest</b><span>Elevated short positioning — squeeze fuel (Ortex)</span></div>
+    <div class="layer"><b>Drawdown</b><span>Beaten-down names: -40% or more from their highs</span></div>
+    <div class="layer"><b>Social buzz</b><span>Acceleration on Reddit, Stocktwits, X</span></div>
+    <div class="layer"><b>Dated catalyst</b><span>Earnings, readouts, decisions — horizon &lt; 60 days</span></div>
+  </div>
+
+  <h2>Track record rules</h2>
+  <div class="panel">
+    <ul class="rules">
+      <li>Every alert is timestamped at the moment it is published to members — never retroactively.</li>
+      <li>No alert is ever removed from the history, winner or loser.</li>
+      <li>Performance is measured mechanically at fixed horizons (7/30/60 days) on closing prices.</li>
+      <li>Alpha is computed against the S&amp;P 500 (SPY) over the same period.</li>
+      <li>This page is regenerated automatically every day — no human intervention.</li>
+    </ul>
+  </div>
+
+  <div class="cta">
+    <a class="btn primary" href="https://whop.com/mark-elias/products/mark-elias-smart-money/" rel="noopener">Join the community</a>
+    <a class="btn" href="https://t.me/MarkElias_Invest" rel="noopener">Free Telegram channel</a>
+  </div>
+  <p class="launch">*Launch price — early members keep this rate for life. Goliath copy trading included.</p>
+
+  <p class="note">
+    Mark Elias is an AI analyst developed by NM Group. Research is generated by artificial intelligence and human-reviewed before publication.<br>
+    This content does not constitute investment advice. For informational purposes only. All investing involves risk of capital loss. Past performance is not indicative of future results.
+  </p>
+  <footer>© 2026 Mark Elias — Smart Money Intelligence · The data is there. The insight is rare.</footer>
+</main>
+</body>
+</html>

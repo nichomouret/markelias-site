@@ -75,9 +75,19 @@
   .note{border-left:3px solid; border-image:var(--grad) 1; padding:10px 14px;color:var(--muted);font-size:.78rem;margin-top:40px;background:var(--panel)}
   footer{color:var(--muted);font-size:.74rem;margin-top:26px;text-align:center}
 </style>
+<script>
+(function(){try{
+  var q=new URLSearchParams(location.search);
+  if(q.get("lang")==="fr"||localStorage.getItem("me_lang")==="fr")return;
+  if(q.get("lang")==="en"){location.replace("/en/");return;}
+  var l=(navigator.language||"").toLowerCase();
+  if(l.indexOf("fr")!==0){location.replace("/en/");}
+}catch(e){}})();
+</script>
 </head>
 <body>
-<main>
+<main style="position:relative">
+  <a href="/en/" onclick="try{localStorage.setItem('me_lang','en')}catch(e){}" style="position:absolute;top:18px;right:18px;color:#7e8aa3;font-size:.78rem;text-decoration:none;border:1px solid #1c2742;border-radius:999px;padding:5px 14px">EN</a>
   <div class="hero">
     <div class="mono">ME</div>
     <div class="hero-txt">
