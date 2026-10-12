@@ -75,6 +75,23 @@
   .note{border-left:3px solid; border-image:var(--grad) 1; padding:10px 14px;color:var(--muted);font-size:.78rem;margin-top:40px;background:var(--panel)}
   footer{color:var(--muted);font-size:.74rem;margin-top:26px;text-align:center}
 </style>
+<script>
+/* ── Tracking Mark Elias ── renseigner les IDs quand les comptes pubs existent */
+var ME_PIXELS = { meta: "", x: "" };
+(function(){try{
+  if(ME_PIXELS.meta){
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;
+    s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', ME_PIXELS.meta); fbq('track', 'PageView');
+  }
+  if(ME_PIXELS.x){
+    !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);},s.version='1.1',s.queue=[],
+    u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+    twq('config', ME_PIXELS.x);
+  }
+}catch(e){}})();
+</script>
 </head>
 <body>
 <main style="position:relative">
@@ -153,5 +170,21 @@
   </p>
   <footer>© 2026 Mark Elias — Smart Money Intelligence · The data is there. The insight is rare.</footer>
 </main>
+<script>
+/* Transfert des UTM de la page vers les liens Whop (attribution des ventes) */
+(function(){try{
+  var ps = new URLSearchParams(location.search), keep = [];
+  ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(function(k){
+    if(ps.get(k)) keep.push([k, ps.get(k)]);
+  });
+  if(!keep.length) return;
+  document.querySelectorAll('a[href*="whop.com"]').forEach(function(a){
+    var u = new URL(a.href);
+    keep.forEach(function(kv){ u.searchParams.set(kv[0], kv[1]); });
+    a.href = u.toString();
+  });
+  if(window.fbq) fbq('track','ViewContent');
+}catch(e){}})();
+</script>
 </body>
 </html>
