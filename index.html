@@ -7,42 +7,98 @@
 <meta name="description" content="Track record public et vérifiable de Mark Elias, analyste IA Smart Money. Toutes les alertes horodatées, performance à 7/30/60 jours, alpha vs S&P 500.">
 <style>
   :root{
-    --bg:#0b0f14; --panel:#121820; --line:#1f2937; --fg:#e7edf4; --muted:#8b97a5;
-    --accent:#28b487; --accent2:#d9a44a;
+    --bg:#070b16; --bg2:#0a1020; --panel:#0e1526; --line:#1c2742;
+    --fg:#f2f5fa; --muted:#7e8aa3;
+    --magenta:#d13bf5; --cyan:#26c6ff; --lime:#9dff3c; --gold:#ffc63f;
+    --grad:linear-gradient(90deg,#8a2bff 0%,#d13bf5 25%,#26c6ff 60%,#9dff3c 100%);
   }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--fg);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
-  main{max-width:880px;margin:0 auto;padding:40px 16px 64px}
-  .tag{display:inline-block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:3px 12px;margin-bottom:14px}
-  h1{font-size:2rem;margin:0 0 6px;letter-spacing:-.02em}
-  .sub{color:var(--muted);margin:0 0 28px;font-size:1rem}
-  h2{font-size:1.15rem;margin:36px 0 12px;letter-spacing:-.01em}
-  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:14px 0}
+  body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,#101a33 0%,var(--bg) 55%);color:var(--fg);
+       font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+  main{max-width:960px;margin:0 auto;padding:48px 18px 64px}
+
+  /* ── Header charte ───────────────────────────── */
+  .hero{display:flex;align-items:center;gap:26px;flex-wrap:wrap;margin-bottom:10px}
+  .mono{flex:0 0 auto;width:96px;height:96px;border-radius:50%;position:relative;display:grid;place-items:center;
+        background:var(--bg2);font-weight:800;font-size:1.9rem;letter-spacing:.02em}
+  .mono::before{content:"";position:absolute;inset:-4px;border-radius:50%;background:conic-gradient(from 210deg,#8a2bff,#d13bf5,#26c6ff,#9dff3c,#8a2bff);
+        -webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 5px),#000 calc(100% - 4px));
+        mask:radial-gradient(farthest-side,transparent calc(100% - 5px),#000 calc(100% - 4px))}
+  .hero-txt h1{font-size:clamp(2.2rem,6vw,3.4rem);font-weight:800;margin:0;letter-spacing:-.03em;line-height:1.05}
+  .hero-rule{height:3px;width:min(420px,80%);background:var(--grad);border-radius:2px;margin:10px 0 12px}
+  .tagline{margin:0;font-size:1.05rem}
+  .tagline .t1{color:var(--fg);opacity:.85}
+  .tagline .t2{color:var(--cyan);font-weight:700}
+
+  .pills{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 6px}
+  .pill{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:8px 18px;border-radius:999px;background:transparent}
+  .pill.m{color:var(--magenta);border:1.5px solid var(--magenta)}
+  .pill.c{color:var(--cyan);border:1.5px solid var(--cyan)}
+  .pill.l{color:var(--lime);border:1.5px solid var(--lime)}
+
+  /* ── Tuiles stats (style bannière) ───────────── */
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:22px 0 8px}
+  .tile{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-align:center}
+  .tile small{display:block;color:var(--muted);font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:4px}
+  .tile b{font-size:1.02rem}
+  .tile .m{color:var(--magenta)} .tile .c{color:var(--cyan)} .tile .l{color:var(--lime)} .tile .g{color:var(--gold)}
+
+  h2{font-size:1.1rem;margin:40px 0 12px;letter-spacing:.01em;display:flex;align-items:center;gap:10px}
+  h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:14px 0}
   table{width:100%;border-collapse:collapse;font-size:.9rem}
   th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
-  th{color:var(--muted);font-weight:600;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em}
+  th{color:var(--muted);font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.12em}
   .empty{color:var(--muted);text-align:center;padding:26px 10px;font-size:.92rem}
-  .layers{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:6px}
-  .layer{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .layer b{display:block;font-size:.86rem;margin-bottom:2px}
-  .layer span{color:var(--muted);font-size:.78rem}
+
+  .layers{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px;margin-top:6px}
+  .layer{background:var(--panel);border:1px solid var(--line);border-top:2px solid transparent;border-radius:12px;padding:13px 15px}
+  .layer:nth-child(1){border-top-color:var(--magenta)} .layer:nth-child(2){border-top-color:var(--cyan)}
+  .layer:nth-child(3){border-top-color:var(--lime)} .layer:nth-child(4){border-top-color:var(--gold)}
+  .layer:nth-child(5){border-top-color:#8a2bff}
+  .layer b{display:block;font-size:.86rem;margin-bottom:3px}
+  .layer span{color:var(--muted);font-size:.77rem}
+
   .rules{margin:0;padding-left:18px;color:var(--muted);font-size:.92rem}
   .rules li{margin:6px 0}
-  .cta{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 8px}
-  .btn{display:inline-block;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600;font-size:.95rem}
-  .btn-p{background:var(--accent);color:#06130e}
-  .btn-s{border:1px solid var(--line);color:var(--fg)}
-  .launch{color:var(--accent2);font-size:.82rem;margin-top:4px}
-  .note{border-left:3px solid var(--accent);padding:10px 14px;color:var(--muted);font-size:.8rem;margin-top:36px;background:var(--panel);border-radius:0 10px 10px 0}
-  footer{color:var(--muted);font-size:.75rem;margin-top:28px}
-  @media (prefers-color-scheme: light){ :root{--bg:#0b0f14} } /* page volontairement sombre, identité de marque */
+  .rules li::marker{color:var(--cyan)}
+
+  /* ── CTA dégradé (style bannière) ────────────── */
+  .cta{display:flex;gap:14px;flex-wrap:wrap;margin:30px 0 8px}
+  .btn{position:relative;display:inline-block;padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:700;
+       font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--fg);background:var(--bg2)}
+  .btn::before{content:"";position:absolute;inset:0;border-radius:999px;padding:1.6px;background:var(--grad);
+       -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+  .btn.primary{background:linear-gradient(90deg,rgba(138,43,255,.18),rgba(38,198,255,.18),rgba(157,255,60,.18))}
+  .launch{color:var(--gold);font-size:.82rem;margin-top:6px}
+
+  .note{border-left:3px solid; border-image:var(--grad) 1; padding:10px 14px;color:var(--muted);font-size:.78rem;margin-top:40px;background:var(--panel)}
+  footer{color:var(--muted);font-size:.74rem;margin-top:26px;text-align:center}
 </style>
 </head>
 <body>
 <main>
-  <span class="tag">AI-powered research</span>
-  <h1>Mark Elias — Track Record</h1>
-  <p class="sub">Smart Money Intelligence · Toutes les alertes, horodatées à la publication, aucune supprimée. Performance mesurée à 7, 30 et 60 jours, alpha vs S&amp;P 500.</p>
+  <div class="hero">
+    <div class="mono">ME</div>
+    <div class="hero-txt">
+      <h1>Mark Elias</h1>
+      <div class="hero-rule"></div>
+      <p class="tagline"><span class="t1">The data is there.</span><br><span class="t2">The insight is rare.</span></p>
+    </div>
+  </div>
+
+  <div class="pills">
+    <span class="pill m">Finance</span>
+    <span class="pill c">Trading</span>
+    <span class="pill l">IA</span>
+  </div>
+
+  <div class="tiles">
+    <div class="tile"><small>Abonnement</small><b class="m">19,99&nbsp;€/mois*</b></div>
+    <div class="tile"><small>Marchés</small><b class="c">Global Markets</b></div>
+    <div class="tile"><small>Horizon</small><b class="l">&lt; 60 jours</b></div>
+    <div class="tile"><small>Objectif</small><b class="g">Surperformer les marchés</b></div>
+  </div>
 
   <h2>Performance globale</h2>
   <div class="panel">
@@ -85,16 +141,16 @@
   </div>
 
   <div class="cta">
-    <a class="btn btn-p" href="https://whop.com/mark-elias" rel="noopener">Devenir membre — 19,99 €/mois</a>
-    <a class="btn btn-s" href="https://t.me/MarkEliasInvest" rel="noopener">Canal Telegram gratuit</a>
+    <a class="btn primary" href="https://whop.com/mark-elias" rel="noopener">Rejoindre la communauté</a>
+    <a class="btn" href="https://t.me/MarkEliasInvest" rel="noopener">Canal Telegram gratuit</a>
   </div>
-  <p class="launch">Prix de lancement — les premiers membres conservent ce tarif à vie.</p>
+  <p class="launch">*Prix de lancement — les premiers membres conservent ce tarif à vie. Copy trading Goliath inclus.</p>
 
   <p class="note">
     Mark Elias est un analyste IA développé par NM Group. Les analyses sont générées par intelligence artificielle et supervisées avant publication.<br>
     Ces contenus ne constituent pas un conseil en investissement au sens de la réglementation AMF. Contenu informatif uniquement. Tout investissement comporte un risque de perte en capital. Les performances passées ne préjugent pas des performances futures.
   </p>
-  <footer>© 2026 Mark Elias — Smart Money Intelligence · AI-powered research, human-reviewed.</footer>
+  <footer>© 2026 Mark Elias — Smart Money Intelligence · The data is there. The insight is rare.</footer>
 </main>
 </body>
 </html>
