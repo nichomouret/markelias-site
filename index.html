@@ -173,6 +173,21 @@ var ME_PIXELS = { meta: "2327537724744030", x: "rh2xr" };
   </div>
   <p class="launch">*Prix de lancement — les premiers membres conservent ce tarif à vie. Copy trading Goliath inclus.</p>
 
+  <section id="me-news" class="panel" style="display:none;margin-top:34px">
+    <h2 style="margin:0 0 10px">Le brief Smart Money par email</h2>
+    <p style="color:var(--muted);font-size:.9rem;margin:0 0 14px">
+      Un email par semaine : les mouvements institutionnels repérés dans les filings, et le point track record. Gratuit, désinscription en un clic.
+    </p>
+    <form id="me-news-form" method="POST" style="display:flex;gap:10px;flex-wrap:wrap">
+      <input type="email" name="EMAIL" required placeholder="votre@email.com" autocomplete="email"
+             style="flex:1;min-width:220px;padding:13px 16px;border-radius:999px;border:1px solid var(--line);background:var(--bg2);color:var(--fg);font-size:.92rem">
+      <button type="submit" class="btn primary" style="border:0;cursor:pointer">S'abonner</button>
+    </form>
+    <p style="color:var(--muted);font-size:.72rem;margin:10px 0 0">
+      Double confirmation par email. Vos données ne sont jamais partagées ni vendues — elles servent uniquement à l'envoi du brief. Désinscription à tout moment.
+    </p>
+  </section>
+
   <p class="note">
     Mark Elias est un analyste IA développé par NM Group. Les analyses sont générées par intelligence artificielle et supervisées avant publication.<br>
     Ces contenus ne constituent pas un conseil en investissement au sens de la réglementation AMF. Contenu informatif uniquement. Tout investissement comporte un risque de perte en capital. Les performances passées ne préjugent pas des performances futures.
@@ -193,6 +208,30 @@ var ME_PIXELS = { meta: "2327537724744030", x: "rh2xr" };
     a.href = u.toString();
   });
   if(window.fbq) fbq('track','ViewContent');
+}catch(e){}})();
+</script>
+<script>
+/* ── Newsletter (Brevo) ── renseigner action + hidden une fois le formulaire Brevo créé */
+var ME_NEWS = {
+  action: "",                 /* URL "action" du formulaire Brevo (sibforms.com/serve/...) */
+  hidden: { locale: "fr" }    /* champs cachés exigés par Brevo (copiés depuis leur embed) */
+};
+(function(){try{
+  if(!ME_NEWS.action) return;
+  var sec = document.getElementById("me-news"), form = document.getElementById("me-news-form");
+  form.action = ME_NEWS.action;
+  Object.keys(ME_NEWS.hidden).forEach(function(k){
+    var i = document.createElement("input"); i.type="hidden"; i.name=k; i.value=ME_NEWS.hidden[k]; form.appendChild(i);
+  });
+  /* attribution : conserver l'UTM d'arrivée dans un champ caché si présent */
+  var ps = new URLSearchParams(location.search);
+  if(ps.get("utm_content")){
+    var u = document.createElement("input"); u.type="hidden"; u.name="UTM_CONTENT"; u.value=ps.get("utm_content"); form.appendChild(u);
+  }
+  form.addEventListener("submit", function(){
+    try{ if(window.fbq) fbq('track','Lead'); if(window.twq) twq('event','tw-rh2xr-lead',{}); }catch(e){}
+  });
+  sec.style.display = "block";
 }catch(e){}})();
 </script>
 </body>
