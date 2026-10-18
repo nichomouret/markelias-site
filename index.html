@@ -72,6 +72,17 @@
   .btn.primary{background:linear-gradient(90deg,rgba(138,43,255,.18),rgba(38,198,255,.18),rgba(157,255,60,.18))}
   .launch{color:var(--gold);font-size:.82rem;margin-top:6px}
 
+
+  /* ── Portefeuille modèle ─────────────────────── */
+  .pf-badge{display:inline-block;font-size:.62rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;padding:4px 10px;border-radius:999px;border:1.5px solid var(--gold);color:var(--gold);margin-left:6px}
+  .pf-chart{width:100%;height:auto;display:block;margin:6px 0 4px}
+  .pf-legend{display:flex;gap:18px;flex-wrap:wrap;font-size:.78rem;color:var(--muted);margin:4px 0 0}
+  .pf-legend i{display:inline-block;width:18px;height:3px;border-radius:2px;vertical-align:middle;margin-right:6px}
+  .pf-sub{color:var(--muted);font-size:.8rem;margin:8px 0 0}
+  .up{color:var(--lime)} .down{color:#ff5d7a}
+  .tbl-wrap,.panel{overflow-x:auto}
+  @media (max-width:560px){#pf-tiles,#pf-sim .tiles{grid-template-columns:1fr 1fr}#pf-tiles .tile,#pf-sim .tile{padding:10px 8px}}
+
   .note{border-left:3px solid; border-image:var(--grad) 1; padding:10px 14px;color:var(--muted);font-size:.78rem;margin-top:40px;background:var(--panel)}
   footer{color:var(--muted);font-size:.74rem;margin-top:26px;text-align:center}
 </style>
@@ -125,6 +136,25 @@ var ME_PIXELS = { meta: "2327537724744030", x: "rh2xr" };
     <div class="tile"><small>Marchés</small><b class="c">Global Markets</b></div>
     <div class="tile"><small>Horizon</small><b class="l">&lt; 60 jours</b></div>
     <div class="tile"><small>Objectif</small><b class="g">Surperformer les marchés</b></div>
+  </div>
+
+  <h2>Portefeuille modèle Mark Elias</h2>
+  <div class="panel">
+    <p style="margin:0 0 10px;font-size:.92rem">Chaque position vient d'un signal smart money (13F des fonds actifs, achats groupés de dirigeants). Entre deux signaux, le capital suit le S&amp;P 500. Chaque entrée et chaque sortie est publiée en temps réel sur X et Telegram.</p>
+    <div class="tiles" id="pf-tiles"><div class="tile" style="grid-column:1/-1"><small>Suivi réel</small><b>Lancement : octobre 2026</b></div></div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Ouverte le</th><th>Ticker</th><th>Entrée</th><th>Dernier</th><th>Perf.</th><th>Poids</th></tr></thead>
+      <tbody id="pf-open"><tr><td colspan="6" class="empty">Aucune position ouverte pour l'instant — le capital est investi dans le S&amp;P 500.</td></tr></tbody>
+    </table></div>
+    <div class="tbl-wrap" id="pf-closed-wrap" style="display:none;margin-top:14px"><table>
+      <thead><tr><th>Ticker</th><th>Entrée → sortie</th><th>Perf.</th><th>Motif</th></tr></thead>
+      <tbody id="pf-closed"></tbody>
+    </table></div>
+  </div>
+
+  <h2>Mêmes règles, appliquées au passé <span class="pf-badge">Simulation</span></h2>
+  <div class="panel" id="pf-sim">
+    <p class="empty">Chargement de la simulation…</p>
   </div>
 
   <h2>Performance globale</h2>
@@ -233,6 +263,70 @@ var ME_NEWS = {
   });
   sec.style.display = "block";
 }catch(e){}})();
+</script>
+
+<script>
+/* ── Portefeuille modèle : portfolio.json (suivi réel) + simulation.json (backtest) ── */
+(function(){
+  var FR = document.documentElement.lang === "fr", base = FR ? "" : "../";
+  var T = FR ? {since:"Depuis le", sp:"S&P 500", open:"Positions ouvertes", closed:"Clôturées", hit:"gagnantes",
+               port:"Portefeuille", sim:"Simulation", dd:"Pire baisse", trades:"Trades", avg:"Gain moyen / trade",
+               note:"SIMULATION (backtest) — pas un historique réel. Mêmes règles que le portefeuille en direct : 10 lignes max (10 % chacune), sortie à 60 jours, stop -10 %, stop suiveur -15 %, pas de nouvelle entrée quand le S&P 500 est sous sa moyenne 200 jours, frais inclus. Les performances passées ne préjugent pas des performances futures.",
+               why:{horizon:"horizon",stop:"invalidation",trail:"stop suiveur",manual:"clôturée"}}
+          : {since:"Since", sp:"S&P 500", open:"Open positions", closed:"Closed", hit:"winners",
+               port:"Portfolio", sim:"Simulation", dd:"Max drawdown", trades:"Trades", avg:"Avg gain / trade",
+               note:"SIMULATION (backtest) — not a real track record. Same rules as the live portfolio: max 10 positions (10% each), 60-day exit, -10% stop, -15% trailing stop, no new entry when the S&P 500 is below its 200-day average, fees included. Past performance is not indicative of future results.",
+               why:{horizon:"horizon",stop:"invalidation",trail:"trailing stop",manual:"closed"}};
+  function pct(v){ if(v===null||v===undefined) return "—"; var s=(v>0?"+":"")+v.toFixed(1)+(FR?" %":"%"); return FR?s.replace(".",","):s; }
+  function cls(v){ return v>0?"up":(v<0?"down":""); }
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];}); }
+
+  fetch(base+"portfolio.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).then(function(d){
+    if(!d) return;
+    document.getElementById("pf-tiles").innerHTML =
+      '<div class="tile"><small>'+T.port+' · '+T.since+' '+esc(d.inception)+'</small><b class="'+cls(d.perf_pct)+'">'+pct(d.perf_pct)+'</b></div>'+
+      '<div class="tile"><small>'+T.sp+'</small><b>'+pct(d.bench_pct)+'</b></div>'+
+      '<div class="tile"><small>'+T.open+'</small><b class="c">'+d.open.length+'</b></div>'+
+      '<div class="tile"><small>'+T.closed+'</small><b>'+d.closed_count+(d.hit_rate!==null?' · '+d.hit_rate+(FR?' % ':'% ')+T.hit:'')+'</b></div>';
+    if(d.open.length){
+      document.getElementById("pf-open").innerHTML = d.open.map(function(p){
+        return '<tr><td>'+esc(p.opened)+'</td><td><b>$'+esc(p.ticker)+'</b></td><td>'+p.entry+'</td><td>'+p.last+'</td><td class="'+cls(p.ret_pct)+'">'+pct(p.ret_pct)+'</td><td>'+pct(p.weight_pct).replace("+","")+'</td></tr>';
+      }).join("");
+    }
+    if(d.closed.length){
+      document.getElementById("pf-closed-wrap").style.display="block";
+      document.getElementById("pf-closed").innerHTML = d.closed.map(function(c){
+        return '<tr><td><b>$'+esc(c.ticker)+'</b></td><td>'+esc(c.opened)+' → '+esc(c.closed)+'</td><td class="'+cls(c.ret_pct)+'">'+pct(c.ret_pct)+'</td><td>'+esc(T.why[c.reason]||c.reason)+'</td></tr>';
+      }).join("");
+    }
+  }).catch(function(){});
+
+  fetch(base+"simulation.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).then(function(s){
+    var box = document.getElementById("pf-sim");
+    if(!s || !s.curve || s.curve.length<2){ box.innerHTML='<p class="empty">'+(FR?"Simulation bientôt disponible.":"Simulation coming soon.")+'</p>'; return; }
+    var M=box.clientWidth<560, W=M?420:900,H=M?260:300,P={l:M?34:44,r:10,t:12,b:24}, c=s.curve;
+    var vals=c.map(function(x){return x.nav}).concat(c.map(function(x){return x.bench}));
+    var lo=Math.min.apply(null,vals), hi=Math.max.apply(null,vals); lo=Math.floor(lo/10)*10; hi=Math.ceil(hi/10)*10;
+    function X(i){return P.l+(W-P.l-P.r)*i/(c.length-1)} function Y(v){return P.t+(H-P.t-P.b)*(1-(v-lo)/(hi-lo))}
+    function path(k){return c.map(function(x,i){return (i?"L":"M")+X(i).toFixed(1)+" "+Y(x[k]).toFixed(1)}).join(" ")}
+    var grid="", step=(hi-lo)>150?50:25;
+    for(var v=lo; v<=hi; v+=step){ grid+='<line x1="'+P.l+'" x2="'+(W-P.r)+'" y1="'+Y(v)+'" y2="'+Y(v)+'" stroke="#1c2742"/>'+
+      '<text x="'+(P.l-8)+'" y="'+(Y(v)+4)+'" fill="#7e8aa3" font-size="11" text-anchor="end">'+v+'</text>'; }
+    var yrs="", lastY=null; c.forEach(function(x,i){ var y=x.day.slice(0,4); if(y!==lastY){ yrs+='<text x="'+X(i)+'" y="'+(H-6)+'" fill="#7e8aa3" font-size="11">'+y+'</text>'; lastY=y; } });
+    var svg='<svg class="pf-chart" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+T.sim+'">'+
+      '<defs><linearGradient id="pfg" x1="0" x2="1"><stop offset="0" stop-color="#8a2bff"/><stop offset=".3" stop-color="#d13bf5"/><stop offset=".65" stop-color="#26c6ff"/><stop offset="1" stop-color="#9dff3c"/></linearGradient></defs>'+
+      grid+yrs+'<path d="'+path("bench")+'" fill="none" stroke="#7e8aa3" stroke-width="2" stroke-dasharray="5 4"/>'+
+      '<path d="'+path("nav")+'" fill="none" stroke="url(#pfg)" stroke-width="3"/></svg>';
+    box.innerHTML =
+      '<div class="tiles" style="margin-top:0">'+
+      '<div class="tile"><small>'+T.port+' · '+esc(s.start.slice(0,7))+' → '+esc(s.end.slice(0,7))+'</small><b class="'+cls(s.perf_pct)+'">'+pct(s.perf_pct)+'</b></div>'+
+      '<div class="tile"><small>'+T.sp+'</small><b>'+pct(s.bench_pct)+'</b></div>'+
+      '<div class="tile"><small>'+T.dd+'</small><b class="g">'+pct(-s.max_dd_pct)+'</b></div>'+
+      '<div class="tile"><small>'+T.trades+' · '+T.avg+'</small><b>'+s.trades+' · '+pct(s.avg_trade_pct)+'</b></div></div>'+
+      svg+'<div class="pf-legend"><span><i style="background:linear-gradient(90deg,#8a2bff,#26c6ff,#9dff3c)"></i>'+T.port+'</span><span><i style="background:#7e8aa3"></i>'+T.sp+'</span></div>'+
+      '<p class="pf-sub">'+T.note+'</p>';
+  }).catch(function(){});
+})();
 </script>
 </body>
 </html>
