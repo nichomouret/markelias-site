@@ -1,0 +1,27 @@
+{
+ "updated": "2026-10-18T12:00+00:00",
+ "inception": "2026-10-17",
+ "capital": 100000.0,
+ "nav": 100000.0,
+ "perf_pct": 0.0,
+ "bench_pct": 0.0,
+ "closed_count": 0,
+ "core": "SPY",
+ "core_pct": 100.0,
+ "hit_rate": null,
+ "avg_closed_pct": null,
+ "open": [],
+ "closed": [],
+ "history": [
+  {
+   "day": "2026-10-17",
+   "nav": 100000.0,
+   "bench": 100000.0
+  },
+  {
+   "day": "2026-10-18",
+   "nav": 100000.0,
+   "bench": 100000.0
+  }
+ ]
+}
