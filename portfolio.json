@@ -1,16 +1,35 @@
 {
- "updated": "2026-10-18T21:00+00:00",
+ "updated": "2026-10-19T04:03+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
  "nav": 100000.0,
- "perf_pct": 0.0,
+ "perf_pct": -0.0,
  "bench_pct": 0.0,
  "closed_count": 0,
  "core": "SPY",
- "core_pct": 100.0,
+ "core_pct": 80.0,
  "hit_rate": null,
  "avg_closed_pct": null,
- "open": [],
+ "open": [
+  {
+   "ticker": "ASTS",
+   "opened": "2026-10-19",
+   "entry": 40.66,
+   "last": 40.66,
+   "ret_pct": 0.0,
+   "weight_pct": 10.0,
+   "x": "2112031802093154537"
+  },
+  {
+   "ticker": "LULU",
+   "opened": "2026-10-19",
+   "entry": 97.1,
+   "last": 97.1,
+   "ret_pct": 0.0,
+   "weight_pct": 10.0,
+   "x": "2112031808317514014"
+  }
+ ],
  "closed": [],
  "history": [
   {
@@ -20,6 +39,11 @@
   },
   {
    "day": "2026-10-18",
+   "nav": 100000.0,
+   "bench": 100000.0
+  },
+  {
+   "day": "2026-10-19",
    "nav": 100000.0,
    "bench": 100000.0
   }
