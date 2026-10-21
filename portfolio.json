@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-20T21:02+00:00",
+ "updated": "2026-10-21T21:03+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
- "nav": 102058.54,
- "perf_pct": 2.06,
- "bench_pct": 0.75,
+ "nav": 102932.45,
+ "perf_pct": 2.93,
+ "bench_pct": 1.29,
  "closed_count": 0,
  "core": "SPY",
- "core_pct": 59.1,
+ "core_pct": 58.9,
  "hit_rate": null,
  "avg_closed_pct": null,
  "open": [
@@ -15,35 +15,35 @@
    "ticker": "ASTS",
    "opened": "2026-10-19",
    "entry": 40.66,
-   "last": 41.13,
-   "ret_pct": 1.16,
-   "weight_pct": 9.9,
+   "last": 40.9,
+   "ret_pct": 0.59,
+   "weight_pct": 9.8,
    "x": "2112031802093154537"
   },
   {
    "ticker": "LULU",
    "opened": "2026-10-19",
    "entry": 97.1,
-   "last": 99.97,
-   "ret_pct": 2.95,
-   "weight_pct": 10.1,
+   "last": 96.53,
+   "ret_pct": -0.59,
+   "weight_pct": 9.7,
    "x": "2112031808317514014"
   },
   {
    "ticker": "HTZ",
    "opened": "2026-10-19",
    "entry": 1.75,
-   "last": 1.93,
-   "ret_pct": 9.84,
-   "weight_pct": 10.9,
+   "last": 2.08,
+   "ret_pct": 18.52,
+   "weight_pct": 11.6,
    "x": "2112258052707537218"
   },
   {
    "ticker": "OKLO",
    "opened": "2026-10-20",
    "entry": 27.24,
-   "last": 27.51,
-   "ret_pct": 0.99,
+   "last": 27.74,
+   "ret_pct": 1.84,
    "weight_pct": 10.0,
    "x": "2112515560596553975"
   }
@@ -69,6 +69,11 @@
    "day": "2026-10-20",
    "nav": 102058.54,
    "bench": 100754.67
+  },
+  {
+   "day": "2026-10-21",
+   "nav": 102932.45,
+   "bench": 101294.46
   }
  ]
 }
