@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-26T16:02+00:00",
+ "updated": "2026-10-26T20:02+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
- "nav": 101576.96,
- "perf_pct": 1.58,
- "bench_pct": 0.25,
+ "nav": 100784.6,
+ "perf_pct": 0.78,
+ "bench_pct": 0.26,
  "closed_count": 1,
  "core": "SPY",
- "core_pct": 49.7,
+ "core_pct": 40.1,
  "hit_rate": 100,
  "avg_closed_pct": 7.69,
  "open": [
@@ -15,46 +15,55 @@
    "ticker": "ASTS",
    "opened": "2026-10-19",
    "entry": 40.66,
-   "last": 40.44,
-   "ret_pct": -0.55,
-   "weight_pct": 9.8,
+   "last": 39.45,
+   "ret_pct": -2.96,
+   "weight_pct": 9.6,
    "x": "2112031802093154537"
   },
   {
    "ticker": "LULU",
    "opened": "2026-10-19",
    "entry": 97.1,
-   "last": 101.83,
-   "ret_pct": 4.87,
-   "weight_pct": 10.3,
+   "last": 102.93,
+   "ret_pct": 6.0,
+   "weight_pct": 10.5,
    "x": "2112031808317514014"
   },
   {
    "ticker": "OKLO",
    "opened": "2026-10-20",
    "entry": 27.24,
-   "last": 26.68,
-   "ret_pct": -2.07,
-   "weight_pct": 9.8,
+   "last": 25.95,
+   "ret_pct": -4.74,
+   "weight_pct": 9.6,
    "x": "2112515560596553975"
   },
   {
    "ticker": "RNA",
    "opened": "2026-10-22",
    "entry": 8.17,
-   "last": 8.05,
-   "ret_pct": -1.47,
-   "weight_pct": 9.9,
+   "last": 8.03,
+   "ret_pct": -1.71,
+   "weight_pct": 10.0,
    "x": "2113346246098239918"
   },
   {
    "ticker": "IREN",
    "opened": "2026-10-26",
    "entry": 24.91,
-   "last": 26.36,
-   "ret_pct": 5.84,
-   "weight_pct": 10.5,
+   "last": 25.43,
+   "ret_pct": 2.13,
+   "weight_pct": 10.3,
    "x": "2114613278743667054"
+  },
+  {
+   "ticker": "MSTR",
+   "opened": "2026-10-26",
+   "entry": 139.87,
+   "last": 139.87,
+   "ret_pct": 0.0,
+   "weight_pct": 10.0,
+   "x": "2114809810449306074"
   }
  ],
  "closed": [
@@ -118,8 +127,8 @@
   },
   {
    "day": "2026-10-26",
-   "nav": 101576.96,
-   "bench": 100247.63
+   "nav": 100784.6,
+   "bench": 100258.76
   }
  ]
 }
