@@ -1,72 +1,75 @@
 {
- "updated": "2026-10-26T07:01+00:00",
+ "updated": "2026-10-26T16:02+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
- "nav": 101198.07,
- "perf_pct": 1.2,
- "bench_pct": -0.43,
- "closed_count": 0,
+ "nav": 101576.96,
+ "perf_pct": 1.58,
+ "bench_pct": 0.25,
+ "closed_count": 1,
  "core": "SPY",
- "core_pct": 38.9,
- "hit_rate": null,
- "avg_closed_pct": null,
+ "core_pct": 49.7,
+ "hit_rate": 100,
+ "avg_closed_pct": 7.69,
  "open": [
   {
    "ticker": "ASTS",
    "opened": "2026-10-19",
    "entry": 40.66,
-   "last": 39.79,
-   "ret_pct": -2.14,
-   "weight_pct": 9.7,
+   "last": 40.44,
+   "ret_pct": -0.55,
+   "weight_pct": 9.8,
    "x": "2112031802093154537"
   },
   {
    "ticker": "LULU",
    "opened": "2026-10-19",
    "entry": 97.1,
-   "last": 99.01,
-   "ret_pct": 1.97,
-   "weight_pct": 10.1,
+   "last": 101.83,
+   "ret_pct": 4.87,
+   "weight_pct": 10.3,
    "x": "2112031808317514014"
-  },
-  {
-   "ticker": "HTZ",
-   "opened": "2026-10-19",
-   "entry": 1.75,
-   "last": 2.04,
-   "ret_pct": 16.24,
-   "weight_pct": 11.6,
-   "x": "2112258052707537218"
   },
   {
    "ticker": "OKLO",
    "opened": "2026-10-20",
    "entry": 27.24,
-   "last": 26.35,
-   "ret_pct": -3.27,
-   "weight_pct": 9.7,
+   "last": 26.68,
+   "ret_pct": -2.07,
+   "weight_pct": 9.8,
    "x": "2112515560596553975"
   },
   {
    "ticker": "RNA",
    "opened": "2026-10-22",
    "entry": 8.17,
-   "last": 8.2,
-   "ret_pct": 0.37,
-   "weight_pct": 10.1,
+   "last": 8.05,
+   "ret_pct": -1.47,
+   "weight_pct": 9.9,
    "x": "2113346246098239918"
   },
   {
    "ticker": "IREN",
    "opened": "2026-10-26",
    "entry": 24.91,
-   "last": 24.91,
-   "ret_pct": 0.0,
-   "weight_pct": 10.0,
+   "last": 26.36,
+   "ret_pct": 5.84,
+   "weight_pct": 10.5,
    "x": "2114613278743667054"
   }
  ],
- "closed": [],
+ "closed": [
+  {
+   "ticker": "HTZ",
+   "opened": "2026-10-19",
+   "closed": "2026-10-26",
+   "entry": 1.75,
+   "exit": 1.89,
+   "ret_pct": 7.69,
+   "reason": "trail",
+   "x_open": "2112258052707537218",
+   "x_close": "2114749382625042808"
+  }
+ ],
  "history": [
   {
    "day": "2026-10-17",
@@ -115,8 +118,8 @@
   },
   {
    "day": "2026-10-26",
-   "nav": 101198.07,
-   "bench": 99570.25
+   "nav": 101576.96,
+   "bench": 100247.63
   }
  ]
 }
