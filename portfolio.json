@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-27T07:03+00:00",
+ "updated": "2026-10-27T21:02+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
- "nav": 100804.61,
- "perf_pct": 0.8,
- "bench_pct": 0.28,
+ "nav": 104884.49,
+ "perf_pct": 4.88,
+ "bench_pct": 0.85,
  "closed_count": 1,
  "core": "SPY",
- "core_pct": 30.1,
+ "core_pct": 29.1,
  "hit_rate": 100,
  "avg_closed_pct": 7.69,
  "open": [
@@ -15,63 +15,63 @@
    "ticker": "ASTS",
    "opened": "2026-10-19",
    "entry": 40.66,
-   "last": 39.45,
-   "ret_pct": -2.98,
-   "weight_pct": 9.6,
+   "last": 41.97,
+   "ret_pct": 3.22,
+   "weight_pct": 9.8,
    "x": "2112031802093154537"
   },
   {
    "ticker": "LULU",
    "opened": "2026-10-19",
    "entry": 97.1,
-   "last": 102.91,
-   "ret_pct": 5.98,
-   "weight_pct": 10.5,
+   "last": 104.62,
+   "ret_pct": 7.74,
+   "weight_pct": 10.3,
    "x": "2112031808317514014"
   },
   {
    "ticker": "OKLO",
    "opened": "2026-10-20",
    "entry": 27.24,
-   "last": 25.94,
-   "ret_pct": -4.77,
-   "weight_pct": 9.6,
+   "last": 27.33,
+   "ret_pct": 0.33,
+   "weight_pct": 9.7,
    "x": "2112515560596553975"
   },
   {
    "ticker": "RNA",
    "opened": "2026-10-22",
    "entry": 8.17,
-   "last": 8.05,
-   "ret_pct": -1.47,
-   "weight_pct": 10.0,
+   "last": 8.31,
+   "ret_pct": 1.71,
+   "weight_pct": 9.9,
    "x": "2113346246098239918"
   },
   {
    "ticker": "IREN",
    "opened": "2026-10-26",
    "entry": 24.91,
-   "last": 25.43,
-   "ret_pct": 2.11,
-   "weight_pct": 10.3,
+   "last": 27.43,
+   "ret_pct": 10.16,
+   "weight_pct": 10.6,
    "x": "2114613278743667054"
   },
   {
    "ticker": "MSTR",
    "opened": "2026-10-26",
    "entry": 139.87,
-   "last": 139.82,
-   "ret_pct": -0.04,
-   "weight_pct": 10.0,
+   "last": 141.36,
+   "ret_pct": 1.07,
+   "weight_pct": 9.7,
    "x": "2114809810449306074"
   },
   {
    "ticker": "SOFI",
    "opened": "2026-10-27",
    "entry": 14.46,
-   "last": 14.46,
-   "ret_pct": 0.0,
-   "weight_pct": 10.0,
+   "last": 16.39,
+   "ret_pct": 13.35,
+   "weight_pct": 10.9,
    "x": "2114976206051238397"
   }
  ],
@@ -141,8 +141,8 @@
   },
   {
    "day": "2026-10-27",
-   "nav": 100804.61,
-   "bench": 100277.76
+   "nav": 104884.49,
+   "bench": 100845.07
   }
  ]
 }
