@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-27T21:02+00:00",
+ "updated": "2026-10-28T07:06+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
- "nav": 104884.49,
- "perf_pct": 4.88,
- "bench_pct": 0.85,
+ "nav": 104901.74,
+ "perf_pct": 4.9,
+ "bench_pct": 0.84,
  "closed_count": 1,
  "core": "SPY",
- "core_pct": 29.1,
+ "core_pct": 19.1,
  "hit_rate": 100,
  "avg_closed_pct": 7.69,
  "open": [
@@ -15,8 +15,8 @@
    "ticker": "ASTS",
    "opened": "2026-10-19",
    "entry": 40.66,
-   "last": 41.97,
-   "ret_pct": 3.22,
+   "last": 41.96,
+   "ret_pct": 3.2,
    "weight_pct": 9.8,
    "x": "2112031802093154537"
   },
@@ -24,8 +24,8 @@
    "ticker": "LULU",
    "opened": "2026-10-19",
    "entry": 97.1,
-   "last": 104.62,
-   "ret_pct": 7.74,
+   "last": 104.59,
+   "ret_pct": 7.71,
    "weight_pct": 10.3,
    "x": "2112031808317514014"
   },
@@ -42,8 +42,8 @@
    "ticker": "RNA",
    "opened": "2026-10-22",
    "entry": 8.17,
-   "last": 8.31,
-   "ret_pct": 1.71,
+   "last": 8.32,
+   "ret_pct": 1.84,
    "weight_pct": 9.9,
    "x": "2113346246098239918"
   },
@@ -51,8 +51,8 @@
    "ticker": "IREN",
    "opened": "2026-10-26",
    "entry": 24.91,
-   "last": 27.43,
-   "ret_pct": 10.16,
+   "last": 27.44,
+   "ret_pct": 10.18,
    "weight_pct": 10.6,
    "x": "2114613278743667054"
   },
@@ -60,8 +60,8 @@
    "ticker": "MSTR",
    "opened": "2026-10-26",
    "entry": 139.87,
-   "last": 141.36,
-   "ret_pct": 1.07,
+   "last": 141.4,
+   "ret_pct": 1.09,
    "weight_pct": 9.7,
    "x": "2114809810449306074"
   },
@@ -69,10 +69,19 @@
    "ticker": "SOFI",
    "opened": "2026-10-27",
    "entry": 14.46,
-   "last": 16.39,
-   "ret_pct": 13.35,
+   "last": 16.4,
+   "ret_pct": 13.42,
    "weight_pct": 10.9,
    "x": "2114976206051238397"
+  },
+  {
+   "ticker": "ENPH",
+   "opened": "2026-10-28",
+   "entry": 29.76,
+   "last": 29.76,
+   "ret_pct": 0.0,
+   "weight_pct": 10.0,
+   "x": "2115339501476188440"
   }
  ],
  "closed": [
@@ -143,6 +152,11 @@
    "day": "2026-10-27",
    "nav": 104884.49,
    "bench": 100845.07
+  },
+  {
+   "day": "2026-10-28",
+   "nav": 104901.74,
+   "bench": 100839.83
   }
  ]
 }
