@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-28T21:02+00:00",
+ "updated": "2026-10-29T21:01+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
- "nav": 104892.11,
- "perf_pct": 4.89,
- "bench_pct": 1.18,
+ "nav": 104120.5,
+ "perf_pct": 4.12,
+ "bench_pct": 0.82,
  "closed_count": 2,
  "core": "SPY",
- "core_pct": 27.6,
+ "core_pct": 27.7,
  "hit_rate": 50,
  "avg_closed_pct": -4.08,
  "open": [
@@ -15,26 +15,26 @@
    "ticker": "ASTS",
    "opened": "2026-10-19",
    "entry": 40.66,
-   "last": 42.32,
-   "ret_pct": 4.08,
-   "weight_pct": 9.9,
+   "last": 43.09,
+   "ret_pct": 5.98,
+   "weight_pct": 10.2,
    "x": "2112031802093154537"
   },
   {
    "ticker": "LULU",
    "opened": "2026-10-19",
    "entry": 97.1,
-   "last": 105.25,
-   "ret_pct": 8.39,
-   "weight_pct": 10.3,
+   "last": 109.84,
+   "ret_pct": 13.12,
+   "weight_pct": 10.9,
    "x": "2112031808317514014"
   },
   {
    "ticker": "OKLO",
    "opened": "2026-10-20",
    "entry": 27.24,
-   "last": 27.13,
-   "ret_pct": -0.4,
+   "last": 26.77,
+   "ret_pct": -1.73,
    "weight_pct": 9.6,
    "x": "2112515560596553975"
   },
@@ -42,36 +42,36 @@
    "ticker": "RNA",
    "opened": "2026-10-22",
    "entry": 8.17,
-   "last": 8.42,
-   "ret_pct": 3.06,
-   "weight_pct": 10.0,
+   "last": 8.25,
+   "ret_pct": 0.98,
+   "weight_pct": 9.9,
    "x": "2113346246098239918"
   },
   {
    "ticker": "IREN",
    "opened": "2026-10-26",
    "entry": 24.91,
-   "last": 28.86,
-   "ret_pct": 15.9,
-   "weight_pct": 11.2,
+   "last": 26.27,
+   "ret_pct": 5.46,
+   "weight_pct": 10.3,
    "x": "2114613278743667054"
   },
   {
    "ticker": "MSTR",
    "opened": "2026-10-26",
    "entry": 139.87,
-   "last": 145.18,
-   "ret_pct": 3.79,
-   "weight_pct": 10.0,
+   "last": 141.55,
+   "ret_pct": 1.2,
+   "weight_pct": 9.8,
    "x": "2114809810449306074"
   },
   {
    "ticker": "SOFI",
    "opened": "2026-10-27",
    "entry": 14.46,
-   "last": 17.13,
-   "ret_pct": 18.46,
-   "weight_pct": 11.4,
+   "last": 17.61,
+   "ret_pct": 21.78,
+   "weight_pct": 11.8,
    "x": "2114976206051238397"
   }
  ],
@@ -159,6 +159,11 @@
    "day": "2026-10-28",
    "nav": 104892.11,
    "bench": 101183.1
+  },
+  {
+   "day": "2026-10-29",
+   "nav": 104120.5,
+   "bench": 100817.56
   }
  ]
 }
