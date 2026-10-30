@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-30T15:10+00:00",
+ "updated": "2026-10-30T20:02+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
- "nav": 100624.37,
- "perf_pct": 0.62,
- "bench_pct": -0.53,
+ "nav": 100179.94,
+ "perf_pct": 0.18,
+ "bench_pct": -0.99,
  "closed_count": 3,
  "core": "SPY",
- "core_pct": 38.2,
+ "core_pct": 28.1,
  "hit_rate": 33,
  "avg_closed_pct": -3.22,
  "open": [
@@ -15,17 +15,17 @@
    "ticker": "ASTS",
    "opened": "2026-10-19",
    "entry": 40.66,
-   "last": 41.81,
-   "ret_pct": 2.83,
-   "weight_pct": 10.2,
+   "last": 40.97,
+   "ret_pct": 0.76,
+   "weight_pct": 10.1,
    "x": "2112031802093154537"
   },
   {
    "ticker": "LULU",
    "opened": "2026-10-19",
    "entry": 97.1,
-   "last": 107.77,
-   "ret_pct": 10.99,
+   "last": 107.26,
+   "ret_pct": 10.46,
    "weight_pct": 11.0,
    "x": "2112031808317514014"
   },
@@ -33,8 +33,8 @@
    "ticker": "OKLO",
    "opened": "2026-10-20",
    "entry": 27.24,
-   "last": 25.39,
-   "ret_pct": -6.79,
+   "last": 25.22,
+   "ret_pct": -7.42,
    "weight_pct": 9.4,
    "x": "2112515560596553975"
   },
@@ -42,28 +42,37 @@
    "ticker": "RNA",
    "opened": "2026-10-22",
    "entry": 8.17,
-   "last": 8.11,
-   "ret_pct": -0.73,
-   "weight_pct": 10.1,
+   "last": 8.31,
+   "ret_pct": 1.71,
+   "weight_pct": 10.4,
    "x": "2113346246098239918"
   },
   {
    "ticker": "MSTR",
    "opened": "2026-10-26",
    "entry": 139.87,
-   "last": 132.54,
-   "ret_pct": -5.24,
-   "weight_pct": 9.5,
+   "last": 130.53,
+   "ret_pct": -6.68,
+   "weight_pct": 9.4,
    "x": "2114809810449306074"
   },
   {
    "ticker": "SOFI",
    "opened": "2026-10-27",
    "entry": 14.46,
-   "last": 16.84,
-   "ret_pct": 16.42,
+   "last": 16.76,
+   "ret_pct": 15.91,
    "weight_pct": 11.7,
    "x": "2114976206051238397"
+  },
+  {
+   "ticker": "ARM",
+   "opened": "2026-10-30",
+   "entry": 205.91,
+   "last": 205.91,
+   "ret_pct": 0.0,
+   "weight_pct": 10.0,
+   "x": "2116259580074176641"
   }
  ],
  "closed": [
@@ -169,8 +178,8 @@
   },
   {
    "day": "2026-10-30",
-   "nav": 100624.37,
-   "bench": 99466.75
+   "nav": 100179.94,
+   "bench": 99013.43
   }
  ]
 }
