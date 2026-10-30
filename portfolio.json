@@ -1,22 +1,22 @@
 {
- "updated": "2026-10-29T21:01+00:00",
+ "updated": "2026-10-30T15:10+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
- "nav": 104120.5,
- "perf_pct": 4.12,
- "bench_pct": 0.82,
- "closed_count": 2,
+ "nav": 100624.37,
+ "perf_pct": 0.62,
+ "bench_pct": -0.53,
+ "closed_count": 3,
  "core": "SPY",
- "core_pct": 27.7,
- "hit_rate": 50,
- "avg_closed_pct": -4.08,
+ "core_pct": 38.2,
+ "hit_rate": 33,
+ "avg_closed_pct": -3.22,
  "open": [
   {
    "ticker": "ASTS",
    "opened": "2026-10-19",
    "entry": 40.66,
-   "last": 43.09,
-   "ret_pct": 5.98,
+   "last": 41.81,
+   "ret_pct": 2.83,
    "weight_pct": 10.2,
    "x": "2112031802093154537"
   },
@@ -24,58 +24,60 @@
    "ticker": "LULU",
    "opened": "2026-10-19",
    "entry": 97.1,
-   "last": 109.84,
-   "ret_pct": 13.12,
-   "weight_pct": 10.9,
+   "last": 107.77,
+   "ret_pct": 10.99,
+   "weight_pct": 11.0,
    "x": "2112031808317514014"
   },
   {
    "ticker": "OKLO",
    "opened": "2026-10-20",
    "entry": 27.24,
-   "last": 26.77,
-   "ret_pct": -1.73,
-   "weight_pct": 9.6,
+   "last": 25.39,
+   "ret_pct": -6.79,
+   "weight_pct": 9.4,
    "x": "2112515560596553975"
   },
   {
    "ticker": "RNA",
    "opened": "2026-10-22",
    "entry": 8.17,
-   "last": 8.25,
-   "ret_pct": 0.98,
-   "weight_pct": 9.9,
+   "last": 8.11,
+   "ret_pct": -0.73,
+   "weight_pct": 10.1,
    "x": "2113346246098239918"
-  },
-  {
-   "ticker": "IREN",
-   "opened": "2026-10-26",
-   "entry": 24.91,
-   "last": 26.27,
-   "ret_pct": 5.46,
-   "weight_pct": 10.3,
-   "x": "2114613278743667054"
   },
   {
    "ticker": "MSTR",
    "opened": "2026-10-26",
    "entry": 139.87,
-   "last": 141.55,
-   "ret_pct": 1.2,
-   "weight_pct": 9.8,
+   "last": 132.54,
+   "ret_pct": -5.24,
+   "weight_pct": 9.5,
    "x": "2114809810449306074"
   },
   {
    "ticker": "SOFI",
    "opened": "2026-10-27",
    "entry": 14.46,
-   "last": 17.61,
-   "ret_pct": 21.78,
-   "weight_pct": 11.8,
+   "last": 16.84,
+   "ret_pct": 16.42,
+   "weight_pct": 11.7,
    "x": "2114976206051238397"
   }
  ],
  "closed": [
+  {
+   "ticker": "IREN",
+   "opened": "2026-10-26",
+   "closed": "2026-10-30",
+   "entry": 24.91,
+   "exit": 24.53,
+   "ret_pct": -1.51,
+   "reason": "trail",
+   "x_open": "2114613278743667054",
+   "x_close": "2116186063647486229"
+  },
   {
    "ticker": "ENPH",
    "opened": "2026-10-28",
@@ -164,6 +166,11 @@
    "day": "2026-10-29",
    "nav": 104120.5,
    "bench": 100817.56
+  },
+  {
+   "day": "2026-10-30",
+   "nav": 100624.37,
+   "bench": 99466.75
   }
  ]
 }
