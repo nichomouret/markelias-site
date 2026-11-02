@@ -1,81 +1,83 @@
 {
- "updated": "2026-11-01T21:01+00:00",
+ "updated": "2026-11-02T18:00+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
- "nav": 100140.52,
- "perf_pct": 0.14,
- "bench_pct": -0.99,
- "closed_count": 3,
+ "nav": 100198.91,
+ "perf_pct": 0.2,
+ "bench_pct": -0.65,
+ "closed_count": 4,
  "core": "SPY",
- "core_pct": 28.2,
- "hit_rate": 33,
- "avg_closed_pct": -3.22,
+ "core_pct": 37.3,
+ "hit_rate": 25,
+ "avg_closed_pct": -4.92,
  "open": [
   {
    "ticker": "ASTS",
    "opened": "2026-10-19",
    "entry": 40.66,
-   "last": 40.97,
-   "ret_pct": 0.76,
-   "weight_pct": 10.1,
+   "last": 38.28,
+   "ret_pct": -5.85,
+   "weight_pct": 9.4,
    "x": "2112031802093154537"
   },
   {
    "ticker": "LULU",
    "opened": "2026-10-19",
    "entry": 97.1,
-   "last": 107.24,
-   "ret_pct": 10.44,
-   "weight_pct": 11.0,
+   "last": 108.46,
+   "ret_pct": 11.7,
+   "weight_pct": 11.1,
    "x": "2112031808317514014"
-  },
-  {
-   "ticker": "OKLO",
-   "opened": "2026-10-20",
-   "entry": 27.24,
-   "last": 25.25,
-   "ret_pct": -7.31,
-   "weight_pct": 9.4,
-   "x": "2112515560596553975"
   },
   {
    "ticker": "RNA",
    "opened": "2026-10-22",
    "entry": 8.17,
-   "last": 8.27,
-   "ret_pct": 1.22,
-   "weight_pct": 10.3,
+   "last": 8.55,
+   "ret_pct": 4.65,
+   "weight_pct": 10.7,
    "x": "2113346246098239918"
   },
   {
    "ticker": "MSTR",
    "opened": "2026-10-26",
    "entry": 139.87,
-   "last": 130.51,
-   "ret_pct": -6.69,
-   "weight_pct": 9.4,
+   "last": 134.01,
+   "ret_pct": -4.19,
+   "weight_pct": 9.6,
    "x": "2114809810449306074"
   },
   {
    "ticker": "SOFI",
    "opened": "2026-10-27",
    "entry": 14.46,
-   "last": 16.76,
-   "ret_pct": 15.91,
-   "weight_pct": 11.7,
+   "last": 17.19,
+   "ret_pct": 18.88,
+   "weight_pct": 12.0,
    "x": "2114976206051238397"
   },
   {
    "ticker": "ARM",
    "opened": "2026-10-30",
    "entry": 205.91,
-   "last": 205.97,
-   "ret_pct": 0.03,
-   "weight_pct": 10.0,
+   "last": 203.34,
+   "ret_pct": -1.25,
+   "weight_pct": 9.9,
    "x": "2116259580074176641"
   }
  ],
  "closed": [
+  {
+   "ticker": "OKLO",
+   "opened": "2026-10-20",
+   "closed": "2026-11-02",
+   "entry": 27.24,
+   "exit": 24.51,
+   "ret_pct": -10.02,
+   "reason": "stop",
+   "x_open": "2112515560596553975",
+   "x_close": null
+  },
   {
    "ticker": "IREN",
    "opened": "2026-10-26",
@@ -190,6 +192,11 @@
    "day": "2026-11-01",
    "nav": 100140.52,
    "bench": 99013.43
+  },
+  {
+   "day": "2026-11-02",
+   "nav": 100198.91,
+   "bench": 99347.53
   }
  ]
 }
