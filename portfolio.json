@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-05T15:15+00:00",
+ "updated": "2026-11-05T20:06+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
- "nav": 99463.82,
- "perf_pct": -0.54,
- "bench_pct": -1.74,
+ "nav": 97859.57,
+ "perf_pct": -2.14,
+ "bench_pct": -3.42,
  "closed_count": 6,
  "core": "SPY",
- "core_pct": 44.6,
+ "core_pct": 24.6,
  "hit_rate": 17,
  "avg_closed_pct": -7.72,
  "open": [
@@ -15,26 +15,26 @@
    "ticker": "LULU",
    "opened": "2026-10-19",
    "entry": 97.1,
-   "last": 110.63,
-   "ret_pct": 13.93,
-   "weight_pct": 11.5,
+   "last": 110.13,
+   "ret_pct": 13.42,
+   "weight_pct": 11.6,
    "x": "2112031808317514014"
   },
   {
    "ticker": "RNA",
    "opened": "2026-10-22",
    "entry": 8.17,
-   "last": 8.66,
-   "ret_pct": 6.06,
-   "weight_pct": 10.9,
+   "last": 8.37,
+   "ret_pct": 2.39,
+   "weight_pct": 10.7,
    "x": "2113346246098239918"
   },
   {
    "ticker": "MSTR",
    "opened": "2026-10-26",
    "entry": 139.87,
-   "last": 130.51,
-   "ret_pct": -6.69,
+   "last": 129.25,
+   "ret_pct": -7.59,
    "weight_pct": 9.5,
    "x": "2114809810449306074"
   },
@@ -42,18 +42,36 @@
    "ticker": "SOFI",
    "opened": "2026-10-27",
    "entry": 14.46,
-   "last": 15.97,
-   "ret_pct": 10.44,
-   "weight_pct": 11.2,
+   "last": 15.94,
+   "ret_pct": 10.24,
+   "weight_pct": 11.4,
    "x": "2114976206051238397"
   },
   {
    "ticker": "DUOL",
    "opened": "2026-11-04",
    "entry": 128.0,
-   "last": 158.68,
-   "ret_pct": 23.97,
-   "weight_pct": 12.4,
+   "last": 154.76,
+   "ret_pct": 20.91,
+   "weight_pct": 12.3,
+   "x": null
+  },
+  {
+   "ticker": "WEN",
+   "opened": "2026-11-05",
+   "entry": 7.96,
+   "last": 7.96,
+   "ret_pct": 0.0,
+   "weight_pct": 10.0,
+   "x": null
+  },
+  {
+   "ticker": "APP",
+   "opened": "2026-11-05",
+   "entry": 352.38,
+   "last": 352.38,
+   "ret_pct": 0.0,
+   "weight_pct": 10.0,
    "x": null
   }
  ],
@@ -223,8 +241,8 @@
   },
   {
    "day": "2026-11-05",
-   "nav": 99463.82,
-   "bench": 98264.0
+   "nav": 97859.57,
+   "bench": 96577.79
   }
  ]
 }
