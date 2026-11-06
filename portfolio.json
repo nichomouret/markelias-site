@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-05T21:02+00:00",
+ "updated": "2026-11-06T20:03+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
- "nav": 98204.54,
- "perf_pct": -1.8,
- "bench_pct": -3.9,
+ "nav": 100141.99,
+ "perf_pct": 0.14,
+ "bench_pct": -3.31,
  "closed_count": 6,
  "core": "SPY",
- "core_pct": 24.3,
+ "core_pct": 14.0,
  "hit_rate": 17,
  "avg_closed_pct": -7.72,
  "open": [
@@ -15,63 +15,72 @@
    "ticker": "LULU",
    "opened": "2026-10-19",
    "entry": 97.1,
-   "last": 111.76,
-   "ret_pct": 15.1,
-   "weight_pct": 11.7,
+   "last": 110.78,
+   "ret_pct": 14.09,
+   "weight_pct": 11.4,
    "x": "2112031808317514014"
   },
   {
    "ticker": "RNA",
    "opened": "2026-10-22",
    "entry": 8.17,
-   "last": 8.36,
-   "ret_pct": 2.33,
-   "weight_pct": 10.6,
+   "last": 8.39,
+   "ret_pct": 2.75,
+   "weight_pct": 10.5,
    "x": "2113346246098239918"
   },
   {
    "ticker": "MSTR",
    "opened": "2026-10-26",
    "entry": 139.87,
-   "last": 129.51,
-   "ret_pct": -7.41,
-   "weight_pct": 9.5,
+   "last": 129.01,
+   "ret_pct": -7.76,
+   "weight_pct": 9.3,
    "x": "2114809810449306074"
   },
   {
    "ticker": "SOFI",
    "opened": "2026-10-27",
    "entry": 14.46,
-   "last": 16.04,
-   "ret_pct": 10.89,
-   "weight_pct": 11.4,
+   "last": 16.18,
+   "ret_pct": 11.93,
+   "weight_pct": 11.3,
    "x": "2114976206051238397"
   },
   {
    "ticker": "DUOL",
    "opened": "2026-11-04",
    "entry": 128.0,
-   "last": 156.91,
-   "ret_pct": 22.58,
-   "weight_pct": 12.4,
+   "last": 158.74,
+   "ret_pct": 24.02,
+   "weight_pct": 12.3,
    "x": null
   },
   {
    "ticker": "WEN",
    "opened": "2026-11-05",
    "entry": 7.96,
-   "last": 7.91,
-   "ret_pct": -0.57,
-   "weight_pct": 9.9,
+   "last": 8.33,
+   "ret_pct": 4.71,
+   "weight_pct": 10.2,
    "x": null
   },
   {
    "ticker": "APP",
    "opened": "2026-11-05",
    "entry": 352.38,
-   "last": 356.18,
-   "ret_pct": 1.08,
-   "weight_pct": 10.1,
+   "last": 396.54,
+   "ret_pct": 12.53,
+   "weight_pct": 11.0,
+   "x": null
+  },
+  {
+   "ticker": "IONQ",
+   "opened": "2026-11-06",
+   "entry": 31.97,
+   "last": 31.97,
+   "ret_pct": 0.0,
+   "weight_pct": 10.0,
    "x": null
   }
  ],
@@ -243,6 +252,11 @@
    "day": "2026-11-05",
    "nav": 98204.54,
    "bench": 96102.19
+  },
+  {
+   "day": "2026-11-06",
+   "nav": 100141.99,
+   "bench": 96685.88
   }
  ]
 }
