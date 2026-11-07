@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-06T21:04+00:00",
+ "updated": "2026-11-07T21:01+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
- "nav": 100021.82,
- "perf_pct": 0.02,
- "bench_pct": -3.65,
+ "nav": 99999.87,
+ "perf_pct": -0.0,
+ "bench_pct": -3.66,
  "closed_count": 6,
  "core": "SPY",
  "core_pct": 14.0,
@@ -15,8 +15,8 @@
    "ticker": "LULU",
    "opened": "2026-10-19",
    "entry": 97.1,
-   "last": 110.75,
-   "ret_pct": 14.06,
+   "last": 110.79,
+   "ret_pct": 14.1,
    "weight_pct": 11.4,
    "x": "2112031808317514014"
   },
@@ -24,17 +24,17 @@
    "ticker": "RNA",
    "opened": "2026-10-22",
    "entry": 8.17,
-   "last": 8.37,
-   "ret_pct": 2.45,
-   "weight_pct": 10.5,
+   "last": 8.34,
+   "ret_pct": 2.08,
+   "weight_pct": 10.4,
    "x": "2113346246098239918"
   },
   {
    "ticker": "MSTR",
    "opened": "2026-10-26",
    "entry": 139.87,
-   "last": 128.97,
-   "ret_pct": -7.79,
+   "last": 128.93,
+   "ret_pct": -7.82,
    "weight_pct": 9.3,
    "x": "2114809810449306074"
   },
@@ -42,8 +42,8 @@
    "ticker": "SOFI",
    "opened": "2026-10-27",
    "entry": 14.46,
-   "last": 16.2,
-   "ret_pct": 12.03,
+   "last": 16.21,
+   "ret_pct": 12.1,
    "weight_pct": 11.3,
    "x": "2114976206051238397"
   },
@@ -61,7 +61,7 @@
    "opened": "2026-11-05",
    "entry": 7.96,
    "last": 8.15,
-   "ret_pct": 2.51,
+   "ret_pct": 2.45,
    "weight_pct": 10.0,
    "x": null
   },
@@ -69,7 +69,7 @@
    "ticker": "APP",
    "opened": "2026-11-05",
    "entry": 352.38,
-   "last": 391.2,
+   "last": 391.22,
    "ret_pct": 11.02,
    "weight_pct": 10.9,
    "x": null
@@ -78,8 +78,8 @@
    "ticker": "IONQ",
    "opened": "2026-11-06",
    "entry": 31.97,
-   "last": 32.57,
-   "ret_pct": 1.88,
+   "last": 32.62,
+   "ret_pct": 2.03,
    "weight_pct": 10.2,
    "x": null
   }
@@ -257,6 +257,11 @@
    "day": "2026-11-06",
    "nav": 100021.82,
    "bench": 96351.13
+  },
+  {
+   "day": "2026-11-07",
+   "nav": 99999.87,
+   "bench": 96336.72
   }
  ]
 }
