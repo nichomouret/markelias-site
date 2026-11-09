@@ -1,99 +1,103 @@
 {
- "updated": "2026-11-09T07:04+00:00",
+ "updated": "2026-11-09T18:01+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
- "nav": 99999.87,
- "perf_pct": -0.0,
- "bench_pct": -3.66,
- "closed_count": 6,
+ "nav": 100562.79,
+ "perf_pct": 0.56,
+ "bench_pct": -1.39,
+ "closed_count": 8,
  "core": "SPY",
- "core_pct": 4.0,
- "hit_rate": 17,
- "avg_closed_pct": -7.72,
+ "core_pct": 22.0,
+ "hit_rate": 12,
+ "avg_closed_pct": -8.35,
  "open": [
   {
    "ticker": "LULU",
    "opened": "2026-10-19",
    "entry": 97.1,
-   "last": 110.79,
-   "ret_pct": 14.1,
-   "weight_pct": 11.4,
+   "last": 113.14,
+   "ret_pct": 16.52,
+   "weight_pct": 11.6,
    "x": "2112031808317514014"
   },
   {
    "ticker": "RNA",
    "opened": "2026-10-22",
    "entry": 8.17,
-   "last": 8.34,
-   "ret_pct": 2.08,
-   "weight_pct": 10.4,
+   "last": 8.3,
+   "ret_pct": 1.59,
+   "weight_pct": 10.3,
    "x": "2113346246098239918"
-  },
-  {
-   "ticker": "MSTR",
-   "opened": "2026-10-26",
-   "entry": 139.87,
-   "last": 128.93,
-   "ret_pct": -7.82,
-   "weight_pct": 9.3,
-   "x": "2114809810449306074"
   },
   {
    "ticker": "SOFI",
    "opened": "2026-10-27",
    "entry": 14.46,
-   "last": 16.21,
-   "ret_pct": 12.1,
-   "weight_pct": 11.3,
+   "last": 16.84,
+   "ret_pct": 16.49,
+   "weight_pct": 11.7,
    "x": "2114976206051238397"
   },
   {
    "ticker": "DUOL",
    "opened": "2026-11-04",
    "entry": 128.0,
-   "last": 160.42,
-   "ret_pct": 25.33,
-   "weight_pct": 12.5,
+   "last": 154.53,
+   "ret_pct": 20.72,
+   "weight_pct": 12.0,
    "x": null
   },
   {
    "ticker": "WEN",
    "opened": "2026-11-05",
    "entry": 7.96,
-   "last": 8.15,
-   "ret_pct": 2.45,
-   "weight_pct": 10.0,
+   "last": 8.31,
+   "ret_pct": 4.53,
+   "weight_pct": 10.2,
    "x": null
   },
   {
    "ticker": "APP",
    "opened": "2026-11-05",
    "entry": 352.38,
-   "last": 391.22,
-   "ret_pct": 11.02,
-   "weight_pct": 10.9,
+   "last": 405.29,
+   "ret_pct": 15.01,
+   "weight_pct": 11.2,
    "x": null
   },
   {
    "ticker": "IONQ",
    "opened": "2026-11-06",
    "entry": 31.97,
-   "last": 32.62,
-   "ret_pct": 2.03,
-   "weight_pct": 10.2,
-   "x": null
-  },
-  {
-   "ticker": "HIMS",
-   "opened": "2026-11-09",
-   "entry": 26.0,
-   "last": 26.0,
-   "ret_pct": 0.0,
-   "weight_pct": 10.0,
+   "last": 35.72,
+   "ret_pct": 11.71,
+   "weight_pct": 11.1,
    "x": null
   }
  ],
  "closed": [
+  {
+   "ticker": "HIMS",
+   "opened": "2026-11-09",
+   "closed": "2026-11-09",
+   "entry": 26.0,
+   "exit": 23.39,
+   "ret_pct": -10.02,
+   "reason": "stop",
+   "x_open": null,
+   "x_close": null
+  },
+  {
+   "ticker": "MSTR",
+   "opened": "2026-10-26",
+   "closed": "2026-11-09",
+   "entry": 139.87,
+   "exit": 125.2,
+   "ret_pct": -10.49,
+   "reason": "stop",
+   "x_open": "2114809810449306074",
+   "x_close": null
+  },
   {
    "ticker": "ARM",
    "opened": "2026-10-30",
@@ -279,8 +283,8 @@
   },
   {
    "day": "2026-11-09",
-   "nav": 99999.87,
-   "bench": 96336.72
+   "nav": 100562.79,
+   "bench": 98607.27
   }
  ]
 }
