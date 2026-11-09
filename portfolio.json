@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-09T18:01+00:00",
+ "updated": "2026-11-09T21:00+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
- "nav": 100562.79,
- "perf_pct": 0.56,
- "bench_pct": -1.39,
+ "nav": 100499.49,
+ "perf_pct": 0.5,
+ "bench_pct": -1.38,
  "closed_count": 8,
  "core": "SPY",
  "core_pct": 22.0,
@@ -15,63 +15,63 @@
    "ticker": "LULU",
    "opened": "2026-10-19",
    "entry": 97.1,
-   "last": 113.14,
-   "ret_pct": 16.52,
-   "weight_pct": 11.6,
+   "last": 112.58,
+   "ret_pct": 15.94,
+   "weight_pct": 11.5,
    "x": "2112031808317514014"
   },
   {
    "ticker": "RNA",
    "opened": "2026-10-22",
    "entry": 8.17,
-   "last": 8.3,
-   "ret_pct": 1.59,
-   "weight_pct": 10.3,
+   "last": 8.38,
+   "ret_pct": 2.51,
+   "weight_pct": 10.4,
    "x": "2113346246098239918"
   },
   {
    "ticker": "SOFI",
    "opened": "2026-10-27",
    "entry": 14.46,
-   "last": 16.84,
-   "ret_pct": 16.49,
-   "weight_pct": 11.7,
+   "last": 16.75,
+   "ret_pct": 15.84,
+   "weight_pct": 11.6,
    "x": "2114976206051238397"
   },
   {
    "ticker": "DUOL",
    "opened": "2026-11-04",
    "entry": 128.0,
-   "last": 154.53,
-   "ret_pct": 20.72,
-   "weight_pct": 12.0,
+   "last": 154.24,
+   "ret_pct": 20.5,
+   "weight_pct": 11.9,
    "x": null
   },
   {
    "ticker": "WEN",
    "opened": "2026-11-05",
    "entry": 7.96,
-   "last": 8.31,
-   "ret_pct": 4.53,
-   "weight_pct": 10.2,
+   "last": 8.29,
+   "ret_pct": 4.21,
+   "weight_pct": 10.1,
    "x": null
   },
   {
    "ticker": "APP",
    "opened": "2026-11-05",
    "entry": 352.38,
-   "last": 405.29,
-   "ret_pct": 15.01,
-   "weight_pct": 11.2,
+   "last": 410.01,
+   "ret_pct": 16.35,
+   "weight_pct": 11.3,
    "x": null
   },
   {
    "ticker": "IONQ",
    "opened": "2026-11-06",
    "entry": 31.97,
-   "last": 35.72,
-   "ret_pct": 11.71,
-   "weight_pct": 11.1,
+   "last": 35.35,
+   "ret_pct": 10.57,
+   "weight_pct": 11.0,
    "x": null
   }
  ],
@@ -283,8 +283,8 @@
   },
   {
    "day": "2026-11-09",
-   "nav": 100562.79,
-   "bench": 98607.27
+   "nav": 100499.49,
+   "bench": 98620.37
   }
  ]
 }
