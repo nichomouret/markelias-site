@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T21:02+00:00",
+ "updated": "2026-11-09T07:04+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
  "nav": 99999.87,
@@ -7,7 +7,7 @@
  "bench_pct": -3.66,
  "closed_count": 6,
  "core": "SPY",
- "core_pct": 14.0,
+ "core_pct": 4.0,
  "hit_rate": 17,
  "avg_closed_pct": -7.72,
  "open": [
@@ -81,6 +81,15 @@
    "last": 32.62,
    "ret_pct": 2.03,
    "weight_pct": 10.2,
+   "x": null
+  },
+  {
+   "ticker": "HIMS",
+   "opened": "2026-11-09",
+   "entry": 26.0,
+   "last": 26.0,
+   "ret_pct": 0.0,
+   "weight_pct": 10.0,
    "x": null
   }
  ],
@@ -265,6 +274,11 @@
   },
   {
    "day": "2026-11-08",
+   "nav": 99999.87,
+   "bench": 96336.72
+  },
+  {
+   "day": "2026-11-09",
    "nav": 99999.87,
    "bench": 96336.72
   }
