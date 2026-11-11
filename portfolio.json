@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-11T13:04+00:00",
+ "updated": "2026-11-11T21:02+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
- "nav": 99478.46,
- "perf_pct": -0.52,
- "bench_pct": -1.75,
+ "nav": 79780.78,
+ "perf_pct": -20.22,
+ "bench_pct": 0.0,
  "closed_count": 8,
  "core": "SPY",
- "core_pct": 12.1,
+ "core_pct": 0.0,
  "hit_rate": 12,
  "avg_closed_pct": -8.35,
  "open": [
@@ -15,63 +15,63 @@
    "ticker": "LULU",
    "opened": "2026-10-19",
    "entry": 97.1,
-   "last": 110.37,
-   "ret_pct": 13.67,
-   "weight_pct": 11.4,
+   "last": 97.1,
+   "ret_pct": 0.0,
+   "weight_pct": 12.5,
    "x": "2112031808317514014"
   },
   {
    "ticker": "RNA",
    "opened": "2026-10-22",
    "entry": 8.17,
-   "last": 8.23,
-   "ret_pct": 0.73,
-   "weight_pct": 10.3,
+   "last": 8.17,
+   "ret_pct": 0.0,
+   "weight_pct": 12.8,
    "x": "2113346246098239918"
   },
   {
    "ticker": "SOFI",
    "opened": "2026-10-27",
    "entry": 14.46,
-   "last": 16.37,
-   "ret_pct": 13.21,
-   "weight_pct": 11.5,
+   "last": 14.46,
+   "ret_pct": 0.0,
+   "weight_pct": 12.6,
    "x": "2114976206051238397"
   },
   {
    "ticker": "DUOL",
    "opened": "2026-11-04",
    "entry": 128.0,
-   "last": 156.67,
-   "ret_pct": 22.4,
-   "weight_pct": 12.2,
+   "last": 128.0,
+   "ret_pct": 0.0,
+   "weight_pct": 12.5,
    "x": null
   },
   {
    "ticker": "WEN",
    "opened": "2026-11-05",
    "entry": 7.96,
-   "last": 8.34,
-   "ret_pct": 4.84,
-   "weight_pct": 10.3,
+   "last": 7.96,
+   "ret_pct": 0.0,
+   "weight_pct": 12.3,
    "x": null
   },
   {
    "ticker": "APP",
    "opened": "2026-11-05",
    "entry": 352.38,
-   "last": 395.51,
-   "ret_pct": 12.24,
-   "weight_pct": 11.0,
+   "last": 352.38,
+   "ret_pct": 0.0,
+   "weight_pct": 12.3,
    "x": null
   },
   {
    "ticker": "IONQ",
    "opened": "2026-11-06",
    "entry": 31.97,
-   "last": 34.99,
-   "ret_pct": 9.45,
-   "weight_pct": 11.0,
+   "last": 31.97,
+   "ret_pct": 0.0,
+   "weight_pct": 12.6,
    "x": null
   },
   {
@@ -80,7 +80,7 @@
    "entry": 12.15,
    "last": 12.15,
    "ret_pct": 0.0,
-   "weight_pct": 10.0,
+   "weight_pct": 12.5,
    "x": null
   }
  ],
@@ -302,8 +302,8 @@
   },
   {
    "day": "2026-11-11",
-   "nav": 99478.46,
-   "bench": 98253.52
+   "nav": 79780.78,
+   "bench": 100000.0
   }
  ]
 }
