@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-15T21:01+00:00",
+ "updated": "2026-11-16T04:02+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
- "nav": 69764.99,
- "perf_pct": -30.24,
+ "nav": 94436.21,
+ "perf_pct": -5.56,
  "bench_pct": 0.0,
- "closed_count": 9,
+ "closed_count": 10,
  "core": "SPY",
- "core_pct": 0.0,
- "hit_rate": 11,
- "avg_closed_pct": -8.5,
+ "core_pct": 30.8,
+ "hit_rate": 10,
+ "avg_closed_pct": -9.73,
  "open": [
   {
    "ticker": "LULU",
@@ -17,7 +17,7 @@
    "entry": 97.1,
    "last": 97.1,
    "ret_pct": 0.0,
-   "weight_pct": 14.3,
+   "weight_pct": 10.6,
    "x": "2112031808317514014"
   },
   {
@@ -26,56 +26,58 @@
    "entry": 8.17,
    "last": 8.17,
    "ret_pct": 0.0,
-   "weight_pct": 14.6,
+   "weight_pct": 10.8,
    "x": "2113346246098239918"
   },
   {
    "ticker": "SOFI",
    "opened": "2026-10-27",
    "entry": 14.46,
-   "last": 14.46,
-   "ret_pct": 0.0,
-   "weight_pct": 14.4,
+   "last": 15.42,
+   "ret_pct": 6.64,
+   "weight_pct": 11.4,
    "x": "2114976206051238397"
   },
   {
    "ticker": "DUOL",
    "opened": "2026-11-04",
    "entry": 128.0,
-   "last": 128.0,
-   "ret_pct": 0.0,
-   "weight_pct": 14.3,
+   "last": 165.31,
+   "ret_pct": 29.15,
+   "weight_pct": 13.6,
    "x": null
   },
   {
    "ticker": "WEN",
    "opened": "2026-11-05",
    "entry": 7.96,
-   "last": 7.96,
-   "ret_pct": 0.0,
-   "weight_pct": 14.0,
+   "last": 8.28,
+   "ret_pct": 4.09,
+   "weight_pct": 10.8,
    "x": null
   },
   {
    "ticker": "APP",
    "opened": "2026-11-05",
    "entry": 352.38,
-   "last": 352.38,
-   "ret_pct": 0.0,
-   "weight_pct": 14.0,
-   "x": null
-  },
-  {
-   "ticker": "RGTI",
-   "opened": "2026-11-11",
-   "entry": 12.15,
-   "last": 12.15,
-   "ret_pct": 0.0,
-   "weight_pct": 14.3,
+   "last": 409.1,
+   "ret_pct": 16.09,
+   "weight_pct": 12.0,
    "x": null
   }
  ],
  "closed": [
+  {
+   "ticker": "RGTI",
+   "opened": "2026-11-11",
+   "closed": "2026-11-16",
+   "entry": 12.15,
+   "exit": 9.62,
+   "ret_pct": -20.82,
+   "reason": "stop",
+   "x_open": null,
+   "x_close": null
+  },
   {
    "ticker": "IONQ",
    "opened": "2026-11-06",
@@ -325,6 +327,11 @@
   {
    "day": "2026-11-15",
    "nav": 69764.99,
+   "bench": 100000.0
+  },
+  {
+   "day": "2026-11-16",
+   "nav": 94436.21,
    "bench": 100000.0
   }
  ]
