@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-16T21:04+00:00",
+ "updated": "2026-11-17T04:02+00:00",
  "inception": "2026-10-17",
  "capital": 100000.0,
- "nav": 59817.14,
- "perf_pct": -40.18,
+ "nav": 39527.37,
+ "perf_pct": -60.47,
  "bench_pct": 0.0,
- "closed_count": 10,
+ "closed_count": 12,
  "core": "SPY",
  "core_pct": 0.0,
- "hit_rate": 10,
- "avg_closed_pct": -9.73,
+ "hit_rate": 17,
+ "avg_closed_pct": -9.66,
  "open": [
   {
    "ticker": "LULU",
@@ -17,26 +17,8 @@
    "entry": 97.1,
    "last": 97.1,
    "ret_pct": 0.0,
-   "weight_pct": 16.7,
+   "weight_pct": 25.3,
    "x": "2112031808317514014"
-  },
-  {
-   "ticker": "RNA",
-   "opened": "2026-10-22",
-   "entry": 8.17,
-   "last": 8.17,
-   "ret_pct": 0.0,
-   "weight_pct": 17.1,
-   "x": "2113346246098239918"
-  },
-  {
-   "ticker": "SOFI",
-   "opened": "2026-10-27",
-   "entry": 14.46,
-   "last": 14.46,
-   "ret_pct": 0.0,
-   "weight_pct": 16.9,
-   "x": "2114976206051238397"
   },
   {
    "ticker": "DUOL",
@@ -44,7 +26,7 @@
    "entry": 128.0,
    "last": 128.0,
    "ret_pct": 0.0,
-   "weight_pct": 16.6,
+   "weight_pct": 25.2,
    "x": null
   },
   {
@@ -53,7 +35,7 @@
    "entry": 7.96,
    "last": 7.96,
    "ret_pct": 0.0,
-   "weight_pct": 16.4,
+   "weight_pct": 24.8,
    "x": null
   },
   {
@@ -62,11 +44,33 @@
    "entry": 352.38,
    "last": 352.38,
    "ret_pct": 0.0,
-   "weight_pct": 16.4,
+   "weight_pct": 24.8,
    "x": null
   }
  ],
  "closed": [
+  {
+   "ticker": "SOFI",
+   "opened": "2026-10-27",
+   "closed": "2026-11-17",
+   "entry": 14.46,
+   "exit": 14.85,
+   "ret_pct": 2.7,
+   "reason": "trail",
+   "x_open": "2114976206051238397",
+   "x_close": null
+  },
+  {
+   "ticker": "RNA",
+   "opened": "2026-10-22",
+   "closed": "2026-11-17",
+   "entry": 8.17,
+   "exit": 6.43,
+   "ret_pct": -21.3,
+   "reason": "stop",
+   "x_open": "2113346246098239918",
+   "x_close": null
+  },
   {
    "ticker": "RGTI",
    "opened": "2026-11-11",
@@ -332,6 +336,11 @@
   {
    "day": "2026-11-16",
    "nav": 59817.14,
+   "bench": 100000.0
+  },
+  {
+   "day": "2026-11-17",
+   "nav": 39527.37,
    "bench": 100000.0
   }
  ]
